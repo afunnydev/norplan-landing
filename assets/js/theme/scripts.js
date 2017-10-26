@@ -26,13 +26,24 @@ Version      : 1.0
          *  CHANGE MENU BACKGROUND JS
          * ----------------------------------------------------------------------------------------
          */
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() > 200) {
-                $('.header-top-area').addClass('menu-bg');
-            } else {
-                $('.header-top-area').removeClass('menu-bg');
-            }
-        });
+        var winwidth = $(window).width();
+        if (winwidth > 767) {
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() > 150) {
+                    $('.header-top-area').addClass('menu-bg');
+                } else {
+                    $('.header-top-area').removeClass('menu-bg');
+                }
+            });
+        } else {
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() > 50) {
+                    $('.header-top-area').addClass('menu-bg');
+                } else {
+                    $('.header-top-area').removeClass('menu-bg');
+                }
+            });
+        }
 
 
 
@@ -108,11 +119,11 @@ Version      : 1.0
          *  GOOGLE MAP JS
          * ----------------------------------------------------------------------------------------
          */
-        var myCenter = new google.maps.LatLng(23.688272, 90.443162);
+        var myCenter = new google.maps.LatLng(45.717799, -74.319718);
 
         function initialize() {
             var mapProp = {
-                zoom: 14,
+                zoom: 12,
                 center: myCenter,
                 scrollwheel: false,
                 styles: [{
@@ -128,6 +139,11 @@ Version      : 1.0
                 mapTpeIdy: google.maps.MapTypeId.ROADMAP
             };
             var map = new google.maps.Map(document.getElementById("map"), mapProp);
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                icon: "/assets/images/logo/map-pin-norplan.png"
+            });
+            marker.setMap(map);
         }
         google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -154,14 +170,25 @@ Version      : 1.0
          *  SCROOL TO UP JS
          * ----------------------------------------------------------------------------------------
          */
-        $(window).on("scroll", function () {
-            if ($(this).scrollTop() > 250) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        });
-        $('.scrollup').on("click", function () {
+        if (winwidth > 767) {
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > 250) {
+                    $('.scrollup:not(.scrollup-phone)').fadeIn();
+                } else {
+                    $('.scrollup:not(.scrollup-phone)').fadeOut();
+                }
+            });
+        } else {
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.scrollup-phone').fadeIn();
+                } else {
+                    $('.scrollup-phone').fadeOut();
+                }
+            });
+        }
+        
+        $('.scrollup:not(.scrollup-phone)').on("click", function () {
             $("html, body").animate({
                 scrollTop: 0
             }, 800);

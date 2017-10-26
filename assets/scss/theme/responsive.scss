@@ -54,8 +54,8 @@ Version      : 1.0
     .welcome-video-area {
         padding-top: 120px;
     }
-    .welcome-image-area h2,
-    .single-slide-item h2,
+    .welcome-image-area h1,
+    .single-slide-item h1,
     .welcome-video-area h2,
     .about-text h2,
     .call-to-area-text h2 {
@@ -92,7 +92,6 @@ Version      : 1.0
     .scrollup {
         height: 40px;
         width: 40px;
-        line-height: 35px;
     }
     .header-text {
         margin-top: 10px;
@@ -130,8 +129,14 @@ Version      : 1.0
         padding-top: 3px;
         margin-bottom: 10px;
     }
+    .menu-bg .tour-info {
+        display: none;
+    }
 }
 
+@media only screen and (max-width: 500px) {
+    
+}
 
 /* Wide Mobile Layout: 480px. */
 
