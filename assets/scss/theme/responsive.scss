@@ -43,6 +43,11 @@ Version      : 1.0
     .contact-icon {
         float: none;
     }
+    #info-div .info p:not(.number) {
+        padding: 6px 14px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+    }
 }
 
 
@@ -134,8 +139,14 @@ Version      : 1.0
     }
 }
 
-@media only screen and (max-width: 500px) {
-    
+@media only screen and (max-width: 991px) {
+    #info-div {
+        top: 6%;
+        overflow: auto;
+        .info {
+            min-width: 350px;
+        }
+    }
 }
 
 /* Wide Mobile Layout: 480px. */

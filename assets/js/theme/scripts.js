@@ -85,33 +85,37 @@ Version      : 1.0
          * ----------------------------------------------------------------------------------------
          */
 
-        $(".testimonial-list").owlCarousel({
-            items: 3,
-            autoPlay: true,
-            navigation: false,
-            itemsDesktop: [1199, 1],
-            itemsDesktopSmall: [980, 2],
-            itemsTablet: [768, 2],
-            itemsTabletSmall: false,
-            itemsMobile: [479, 1],
-            pagination: true,
-            autoHeight: true,
-        });
-
-
         $(".tour-list").owlCarousel({
-            items: 4,
-            autoPlay: true,
-            navigation: false,
-            itemsDesktop: [1199, 1],
-            itemsDesktopSmall: [980, 2],
-            itemsTablet: [768, 2],
-            itemsTabletSmall: false,
-            itemsMobile: [479, 1],
-            pagination: true,
-            autoHeight: true,
+            items: 1,
+            dots: true,
+            responsive: {
+                500: {
+                    items: 2
+                },
+                800: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
         });
-
+        $("#project-list").owlCarousel({
+            items: 1,
+            dots: true,
+            responsive: {
+                600: {
+                    items: 2
+                }
+            }
+        });
+        $('.info:not(#t1)').blindLeftToggle('fast');
+        $('.info#t1').addClass('toggled');
+        $('span.numbers').click(function(){
+            var id = $(this).prop('id');
+            $('.info.toggled').blindLeftToggle('fast').removeClass('toggled');
+            $('.info#'+ id).blindLeftToggle('fast').addClass('toggled');
+        })
 
 
         /*

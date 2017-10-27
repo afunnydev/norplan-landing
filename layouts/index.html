@@ -58,7 +58,51 @@
         </div>
     </header>
     <!-- / END HOMEPAGE DESIGN AREA -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2>Nos terrains</h2>
+                        <div id="terrains">
+                            <img src="/assets/images/bg/plan-hameau-champetre.png" alt="terrains hameau champetre">
+                            {{ range .Params.terrains }}
+                            <span id="t{{.number}}" class="numbers">{{.number}}</span>
+                            {{ end }}
+                            <div id="info-div">
+                                <div style="position: relative; width: 100%; height: 100%;">
+                                    {{ range .Params.terrains}}
+                                    <div id="t{{.number}}" class="info">
+                                        <p class="number">{{.number}}</p>
+                                        {{ range .info}}
+                                        <p>{{.}}</p>
+                                        {{ end }}
+                                    </div>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- START CALL TO ACTION DESIGN AREA -->
+    <section id="download" class="call-to-area" data-stellar-background-ratio="0.6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="call-to-area-text text-center">
+                        <h2>Vous êtes intéressé par le projet?</h2>
+                        <p>Nous offrons des visites de terrains et des séances d'information privées!</p>
+                        <a class="smoth-scroll cta-btn slide-btn" href="#contact">Appelez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / END CALL TO ACTION DESIGN AREA -->
 
     <!-- START TOUR PLACE DESIGN AREA -->
     <section id="place" class="tour-places section-padding">
@@ -70,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tour-list">
+            <div class="tour-list owl-carousel owl-theme">
                 <!-- START SINGLE TOUR PLACE DESIGN AREA -->
                 {{ range .Params.section2.images}}
                 <div class="single-place">
@@ -90,7 +134,7 @@
 
 
     <!-- START CALL TO ACTION DESIGN AREA -->
-    <section id="download" class="call-to-area" data-stellar-background-ratio="0.6">
+    <section id="download" class="call-to-area">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -164,7 +208,52 @@
         </div>
     </section>
     <!-- / END CALL TO ACTION DESIGN AREA -->
-
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2>Comment s'y rendre</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row directions-row">
+                <div class="col-sm-6 col-md-6 text-center directions-cont">
+                    <div class="directions-col">
+                        <h4>De Laval ou Montréal</h4>
+                        <ul>
+                            <li>Prendre la sortie pour Autoroute 15 N en direction de Aéroport Mirabel/Laval</li>
+                            <li>Continuer sur Route Transcanadienne/Autoroute 15 N</li>
+                            <li>Prendre la sortie 35 pour rejoindre Autoroute 50 O en direction de Lachute (19,4 km)</li>
+                            <li>Prendre la sortie 272 vers Saint Eustache/Mirabel/Route Arthur Sauvé(Saint Hermas)</li>
+                            <li>Suivre QC-158 O en direction de Ch Dunany à Lachute (18,8 km)</li>
+                            <li>Tourner à droite sur QC-148 O (700 m)</li>
+                            <li>Tourner à gauche sur QC-158 O (panneaux pour QC-148 O) (10,9 km)</li>
+                            <li>Tourner à droite sur Ch Dunany (700 m)</li>
+                            <li>Tourner à gauche pour continuer sur Ch Dunany (6,5 km)</li>
+                            <li>301 Chemin MacDougall (intersection du Cn.Dunany et MacDougall)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 text-center directions-cont">
+                    <div class="directions-col">
+                        <h4>De l'Outaouais</h4>
+                        <ul>
+                            <li>Suivre Autoroute 50 E</li>
+                            <li>Prendre la sortie 260 pour QC-329 en direction de Lachute/Mirabel/Saint-Hermas/Centre-Ville</li>
+                            <li>Suivre QC-329 N en direction de Ch Dunany (13,6 km)</li>
+                            <li>Tourner à droite sur QC-329 N (panneaux pour Mirabel/Saint-Hermas) (1,9 km)</li>
+                            <li>Tourner à gauche pour continuer sur QC-329 N  (3,4 km)</li>
+                            <li>Tourner à gauche sur QC-148 O/QC-158 O (1,1 km)</li>
+                            <li>Tourner à droite sur Ch Dunany (700 m)</li>
+                            <li>Tourner à gauche pour continuer sur Ch Dunany (6,5 km)</li>
+                            <li>301 Chemin MacDougall (intersection du Cn.Dunany et MacDougall)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- START GOOGLE MAP DESIGN AREA -->
     <div id="map"></div>
     <!-- / END GOOGLE MAP DESIGN AREA -->
@@ -210,7 +299,7 @@
                                     <input type="email" name="email" class="form-control" id="email" placeholder="Courriel" required="required">
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Sujet">
+                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Sujet ou # de terrain">
                                 </div>
                                 <div class="form-group col-md-12">
                                     <textarea rows="6" name="message" class="form-control" id="description" placeholder="Votre message" required="required"></textarea>
@@ -229,7 +318,32 @@
         </div>
     </section>
     <!-- / END CONTACT DESIGN AREA -->
-
+    <!-- START TOUR PLACE DESIGN AREA -->
+    <section id="place" class="tour-places section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2>{{.Params.dsection.titre}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="project-list owl-carousel owl-theme" id="project-list">
+                <!-- START SINGLE TOUR PLACE DESIGN AREA -->
+                {{ range .Params.dsection.images}}
+                <div class="single-place">
+                    <img src="{{.lien}}" alt="">
+                    <div class="tour-des">
+                        <h2>{{ .projet }}</h2>
+                        <h3>Rive-Nord</h3>
+                    </div>
+                </div>
+                {{ end }}
+                <!-- / END SINGLE TOUR PLACE DESIGN AREA -->
+            </div>
+        </div>
+    </section>
+    <!-- / END  TOUR PLACE DESIGN AREA -->
 
     <!-- START FOOTER DESIGN AREA -->
     <footer class="footer-area section-padding">

@@ -120,7 +120,6 @@ a.read-more {
     display: inline-block;
     color: #fff;
     padding: 12px 25px;
-    text-transform: capitalize;
     font-size: 14px;
     border: 1px solid #73AE20;
     background-color: #73AE20;
@@ -308,7 +307,6 @@ a.read-more:hover {
     color: #fff;
     font-size: 80px;
     margin-top: 10px;
-    text-transform: capitalize;
 }
 
 .header-text p {
@@ -344,7 +342,6 @@ a.read-more:hover {
     color: #fff;
     font-size: 14px;
     font-weight: 300;
-    text-transform: capitalize;
 }
 
 .tour-info ul li i {
@@ -405,7 +402,6 @@ a.slide-btn {
     display: inline-block;
     color: #fff;
     padding: 12px 30px;
-    text-transform: capitalize;
     font-size: 12px;
     border: 1px solid #73AE20;
     text-transform: uppercase;
@@ -664,7 +660,6 @@ a.slide-btn:hover {
 
 .single-place h2 {
     font-size: 18px;
-    text-transform: capitalize;
     font-weight: 600;
     margin-top: 0;
 }
@@ -816,12 +811,10 @@ a.slide-btn:hover {
 .call-to-area-text h2 {
     color: #fff;
     font-size: 40px;
-    text-transform: capitalize;
     font-weight: 900;
 }
 
 .call-to-area-text p {
-    text-transform: capitalize;
     color: #fff;
     margin-bottom: 30px;
 }
@@ -830,7 +823,6 @@ a.slide-btn:hover {
     display: inline-block;
     color: #fff;
     padding: 12px 25px;
-    text-transform: capitalize;
     font-size: 14px;
     border: 1px solid #73AE20;
     font-weight: 600;
@@ -894,7 +886,6 @@ a.slide-btn:hover {
 .single-testimonial h6 {
     margin-top: 0px;
     font-size: 12px;
-    text-transform: capitalize;
     letter-spacing: 3px;
 }
 
@@ -910,7 +901,6 @@ a.slide-btn:hover {
 .testi-name h2 {
     font-size: 18px;
     margin-top: 20px;
-    text-transform: capitalize;
     font-weight: 600;
     -webkit-transition: .3s;
     transition: .3s;
@@ -920,7 +910,6 @@ a.slide-btn:hover {
 .testi-name h3 {
     font-size: 16px;
     font-weight: 300;
-    text-transform: capitalize;
     margin-top: 0;
     color: #333;
 }
@@ -979,7 +968,6 @@ a.slide-btn:hover {
 .single-contact h5 {
     font-size: 18px;
     margin-top: 20px;
-    text-transform: capitalize;
     font-weight: 600;
     -webkit-transition: .3s;
     transition: .3s;
@@ -1021,7 +1009,6 @@ a.slide-btn:hover {
     display: inline-block;
     color: #fff;
     padding: 12px 25px;
-    text-transform: capitalize;
     font-size: 14px;
     border: 1px solid #73AE20;
     background-color: #73AE20;
@@ -1116,7 +1103,6 @@ a.slide-btn:hover {
 .footer-menu ul li a {
     display: block;
     color: #fafafa;
-    text-transform: capitalize;
 }
 
 .footer-menu ul li a:hover {
@@ -1168,7 +1154,6 @@ a.slide-btn:hover {
 .preview-header-top-area h2 {
     font-size: 120px;
     color: #000;
-    text-transform: capitalize;
     font-weight: 900;
 }
 
@@ -1184,4 +1169,103 @@ a.slide-btn:hover {
 
 .main {
     margin-bottom: 180px;
+}
+.slide-btn.cta-btn {
+    border-color: white;
+    &:hover {
+        background-color: white;
+        color: $pcolor
+    }
+}
+#terrains {
+    position: relative;
+}
+#terrains span.numbers {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+    display: block;
+    position: absolute;
+    line-height: 30px;
+    cursor: pointer;
+}
+.numbers#t1 {top: 12%;left: 11%}
+.numbers#t2 {top: 10%;left: 17.5%;}
+.numbers#t3 {top: 9%;left: 23%;}
+.numbers#t4 {top: 21%;left: 15%}
+.numbers#t5 {top: 29%;left: 16%;}
+.numbers#t6 {top: 37%;left: 17%;}
+.numbers#t7 {top: 45%;left: 18%;}
+.numbers#t8 {top: 55%;left: 11.5%;}
+.numbers#t9 {top: 55%;left: 19%;}
+.numbers#t10 {top: 55%;left: 25.5%;}
+.numbers#t11 {top: 55%;left: 31%;}
+.numbers#t12 {top: 55%;left: 38%;}
+.numbers#t13 {top: 55%;left: 45.5%;}
+.numbers#t14 {top: 55%;left: 51%;}
+.numbers#t15 {top: 55%;left: 56.5%;}
+.numbers#t16 {top: 55%;left: 62%;}
+.numbers#t17 {top: 55%;left: 67.5%;}
+.numbers#t18 {top: 55%;left: 80%;}
+.numbers#t19 {top: 73%;left: 75%;}
+.numbers#t20 {top: 82%;left: 71.5%;}
+.numbers#t21 {top: 84%;left: 66%;}
+.numbers#t22 {top: 87%;left: 57%;}
+.numbers#t23 {top: 87%;left: 47.5%;}
+.numbers#t24 {top: 87%;left: 40.5%;}
+.numbers#t25 {top: 87%;left: 34.5%;}
+.numbers#t26 {top: 87%;left: 29%;}
+.numbers#t27 {top: 87%;left: 23%;}
+.numbers#t28 {top: 85%;left: 10%;}
+.numbers#t29 {top: 70%;left: 10%;}
+#info-div {
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    padding: 20px 50px;
+    border: 1px solid $pcolor;
+    height: 40%;
+    min-width: 60%;
+    overflow: hidden;
+    p.number {
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        color: white;
+        display: block;
+        line-height: 50px;
+        font-size: 25px;
+        margin: 0 auto 20px;
+    }
+    .info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 600px
+    }
+    p:not(.number) {
+        padding: 6px 14px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+    }
+}
+.directions-row {
+    .directions-cont {
+        padding: 20px
+    }
+    .directions-col {
+        border: 1px solid $pcolor;
+        padding: 20px;
+        ul {
+            text-align: left;
+            padding-left: 15px;
+            li {
+                padding: 5px;
+            }
+        }
+    }
 }
