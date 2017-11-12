@@ -1,9 +1,9 @@
 ---
 title: "Hameau Champêtre"
-description: "Votre havre de paix, a 35 minutes de laval."
+description: "Votre havre de paix, a 35 minutes de Laval."
 slider:
   titre: Hameau Champêtre
-  stitre: "Votre havre de paix, à 35 minutes de laval"
+  stitre: "Votre havre de paix, à 35 minutes de Laval"
   btn1: "Voir les photos"
   link1: "#place"
   btn2: "Comment s'y rendre?"
@@ -25,148 +25,177 @@ terrains:
   - number: 1
     info:
       - "Chemin de Dunany"
-      - "Superficie: 3126,5m carré"
       - "Boisé"
+    superficie: "3126,5m carré"
+    groupe: 1   
   - number: 2
     info:
       - "Chemin de Dunany"
-      - "Superficie: 2940,0m carré"
       - "Boisé"
+    superficie: "2940,0m carré"
+    groupe: 1  
   - number: 3
     info:
       - "Chemin de Dunany"
-      - "Superficie: 4044,9m carré"
       - "Boisé"
+    superficie: "4044,9m carré"
+    groupe: 1  
   - number: 4
     info:
       - "Chemin MacDougall"
-      - "Superficie: 7441,9m carré"
       - "Boisé"
+    superficie: "7441,9m carré"
+    groupe: 4   
   - number: 5
     info:
       - "Chemin MacDougall"
-      - "Superficie: 7651,1m carré"
       - "Boisé"
+    superficie: "7651,1m carré"
+    groupe: 4   
   - number: 6
     info:
       - "Chemin MacDougall"
-      - "Superficie: 7619,2m carré"
       - "Boisé"
+    superficie: "7619,2m carré"
+    groupe: 4   
   - number: 7
     info:
       - "Chemin MacDougall"
-      - "Superficie: 8155,5m carré"
       - "Boisé"
+    superficie: "8155,5m carré"
+    groupe: 4   
   - number: 8
     info:
       - "Rue Champêtre"
-      - "Superficie: 4042,4m carré"
       - "Boisé"
+    superficie: "4042,4m carré"
+    groupe: 2  
   - number: 9
     info:
       - "Rue Champêtre"
-      - "Superficie: 4048,9m carré"
       - "Boisé"
+    superficie: "4048,9m carré"
+    groupe: 2   
   - number: 10
     info:
       - "Rue Champêtre"
-      - "Superficie: 4026,7m carré"
       - "Boisé"
+    superficie: "4026,7m carré"
+    groupe: 2   
   - number: 11
     info:
       - "Rue Champêtre"
-      - "Superficie: 4041,5m carré"
       - "Boisé"
+    superficie: "4041,5m carré"
+    groupe: 2   
   - number: 12
     info:
       - "Rue Champêtre"
-      - "Superficie: 6370,0m carré"
       - "Boisé"
+    superficie: "6370,0m carré"
+    groupe: 2   
   - number: 13
     info:
       - "Rue Champêtre"
-      - "Superficie: 5125,7m carré"
       - "Boisé"
+    superficie: "5125,7m carré"
+    groupe: 2   
   - number: 14
     info:
       - "Rue Champêtre"
-      - "Superficie: 7566,2m carré"
       - "Boisé"
+    superficie: "7566,2m carré"
+    groupe: 2   
   - number: 15
     info:
       - "Rue Champêtre"
-      - "Superficie: 7368,2m carré"
       - "Boisé"
+    superficie: "7368,2m carré"
+    groupe: 2   
   - number: 16
     info:
       - "Rue Champêtre"
-      - "Superficie: 5970,0m carré"
       - "Boisé"
+    superficie: "5970,0m carré"
+    groupe: 2   
   - number: 17
     info:
       - "Rue Champêtre"
-      - "Superficie: 4027,1m carré"
       - "Boisé"
+    superficie: "4027,1m carré"
+    groupe: 2   
   - number: 18
     info:
       - "Rue Champêtre"
-      - "Superficie: 16499,2m carré"
-      - "Boisé avec petit étendue d'eau"
+      - "Boisé avec petite étendue d'eau"
+    superficie: "16499,2m carré"
+    groupe: 5 
   - number: 19
     info:
       - "Rue Champêtre"
-      - "Superficie: 7254,6m carré"
-      - "Boisé avec petit étendue d'eau"
+      - "Boisé avec petite étendue d'eau"
+    superficie: "7254,6m carré"
+    groupe: 5 
   - number: 20
     info:
       - "Rue Champêtre"
-      - "Superficie: 4800,7m carré"
       - "Boisé"
+    superficie: "4800,7m carré"
+    groupe: 2   
   - number: 21
     info:
       - "Rue Champêtre"
-      - "Superficie: 4142,0m carré"
       - "Boisé"
+    superficie: "4142,0m carré"
+    groupe: 2   
   - number: 22
     info:
       - "Rue Champêtre"
-      - "Superficie: 4038,4m carré"
       - "Boisé"
+    superficie: "4038,4m carré"
+    groupe: 2   
   - number: 23
     info:
       - "Rue Champêtre"
-      - "Superficie: 4460,0m carré"
       - "Boisé"
+    superficie: "4460,0m carré"
+    groupe: 2   
   - number: 24
     info:
       - "Rue Champêtre"
-      - "Superficie: 5421,2m carré"
       - "Boisé"
+    superficie: "5421,2m carré"
+    groupe: 2   
   - number: 25
     info:
       - "Rue Champêtre"
-      - "Superficie: 5540,5m carré"
       - "Boisé"
+    superficie: "5540,5m carré"
+    groupe: 2   
   - number: 26
     info:
       - "Rue Champêtre"
-      - "Superficie: 5631,7m carré"
       - "Boisé"
+    superficie: "5631,7m carré"
+    groupe: 2   
   - number: 27
     info:
       - "Rue Champêtre"
-      - "Superficie: 6309,6m carré"
       - "Boisé avec petite étendue d'eau"
+    superficie: "6309,6m carré"
+    groupe: 5
   - number: 28
     info:
       - "Chemin MacDougall"
-      - "Superficie: 6816,8m carré"
       - "Boisé avec petite étendue d'eau"
+    superficie: "6816,8m carré"
+    groupe: 3 
   - number: 29
     info:
       - "Chemin MacDougall"
-      - "Superficie: 7558,2m carré"
-      - "Boisé avec petit étendue d'eau"
+      - "Boisé avec petite étendue d'eau"
+    superficie: "7558,2m carré"
+    groupe: 3
 dsection:
   titre: Nos autres projets
   images:

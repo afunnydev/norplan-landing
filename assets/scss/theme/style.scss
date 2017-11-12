@@ -103,7 +103,7 @@ fieldset {
 }
 
 .section-title p {
-    background: #73AE20;
+    background: $pcolor;
     display: inline-block;
     color: #000;
     padding: 1px 10px;
@@ -121,8 +121,8 @@ a.read-more {
     color: #fff;
     padding: 12px 25px;
     font-size: 14px;
-    border: 1px solid #73AE20;
-    background-color: #73AE20;
+    border: 1px solid $pcolor;
+    background-color: $pcolor;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -130,7 +130,7 @@ a.read-more {
 a.read-more:hover {
     background: transparent;
     color: #000;
-    border: 1px solid #73AE20;
+    border: 1px solid $pcolor;
     -webkit-transition: .3s;
     transition: .3s;
 }
@@ -149,7 +149,7 @@ a.read-more:hover {
     cursor: pointer;
     display: none;
     z-index: 2;
-    background: #73AE20;
+    background: $pcolor;
     box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 .scrollup.scrollup-phone {
@@ -211,7 +211,7 @@ a.read-more:hover {
 }
 
 .dot1 {
-    background-color: #73AE20;
+    background-color: $pcolor;
 }
 
 .dot2 {
@@ -271,7 +271,7 @@ a.read-more:hover {
 .welcome-image-area {
     position: relative;
     height: 100%;
-    background: url(../images/bg/hameau-champetre-2.jpg);
+    background: url(../images/bg/terrain-rive-nord.jpg);
     background-size: cover;
     z-index: 1;
     background-position: bottom center
@@ -346,7 +346,7 @@ a.read-more:hover {
 
 .tour-info ul li i {
     margin-right: 10px;
-    background: #73AE20;
+    background: $pcolor;
     height: 25px;
     width: 25px;
     text-align: center;
@@ -403,17 +403,17 @@ a.slide-btn {
     color: #fff;
     padding: 12px 30px;
     font-size: 12px;
-    border: 1px solid #73AE20;
+    border: 1px solid $pcolor;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
     border-radius: 30px;
-    background: #73AE20;
+    background: $pcolor;
 }
 
 a.slide-btn:hover {
     color: #fff;
-    border: 1px solid #73AE20;
+    border: 1px solid $pcolor;
     background: transparent;
 }
 
@@ -562,7 +562,7 @@ a.slide-btn:hover {
 .slider-control {
     background: transparent;
     border: 1px solid #fff;
-    color: #73AE20;
+    color: $pcolor;
     font-size: 24px;
     width: 40px;
     height: 40px;
@@ -579,7 +579,7 @@ a.slide-btn:hover {
 .slider-control:hover {
     background: transparent;
     border: 1px solid #fff;
-    color: #73AE20;
+    color: $pcolor;
 }
 
 .carousel-indicators li {
@@ -587,7 +587,7 @@ a.slide-btn:hover {
     height: 4px;
     border-radius: 4px;
     margin: 0;
-    background: #73AE20;
+    background: $pcolor;
     border: none;
     -webkit-transition: .3s;
     transition: .3s;
@@ -703,7 +703,7 @@ a.slide-btn:hover {
     height: 10px;
     margin: 5px 7px;
     border-radius: 20px;
-    background: #73AE20;
+    background: $pcolor;
 }
 
 .owl-theme .owl-controls {
@@ -758,13 +758,13 @@ a.slide-btn:hover {
 
 .service-icon i {
     font-size: 40px;
-    color: #73AE20;
+    color: $pcolor;
     height: 100px;
     width: 100px;
     background: #fff;
     line-height: 100px;
     border-radius: 50%;
-    border: 1px solid #73AE20;
+    border: 1px solid $pcolor;
     -webkit-transition: .3s;
     transition: .3s;
 }
@@ -772,8 +772,8 @@ a.slide-btn:hover {
 .single-service:hover .service-icon i {
     font-size: 50px;
     color: #fff;
-    background: #73AE20;
-    border: 1px solid #73AE20;
+    background: $pcolor;
+    border: 1px solid $pcolor;
     -webkit-transition: .3s;
     transition: .3s;
 }
@@ -824,11 +824,11 @@ a.slide-btn:hover {
     color: #fff;
     padding: 12px 25px;
     font-size: 14px;
-    border: 1px solid #73AE20;
+    border: 1px solid $pcolor;
     font-weight: 600;
     letter-spacing: 1px;
     border-radius: 30px;
-    background: #73AE20;
+    background: $pcolor;
 }
 
 .call-to-area-text a:hover {
@@ -920,7 +920,7 @@ a.slide-btn:hover {
     height: 10px;
     margin: 5px 7px;
     border-radius: 20px;
-    background: #73AE20;
+    background: $pcolor;
 }
 
 
@@ -941,10 +941,10 @@ a.slide-btn:hover {
 
 .contact-icon i {
     font-size: 20px;
-    color: #73AE20;
+    color: $pcolor;
     height: 50px;
     width: 50px;
-    border: 1px solid #73AE20;
+    border: 1px solid $pcolor;
     border-radius: 50%;
     line-height: 50px;
     text-align: center;
@@ -954,11 +954,11 @@ a.slide-btn:hover {
 
 .single-contact:hover .contact-icon i {
     color: #fff;
-    border: 1px solid #73AE20;
+    border: 1px solid $pcolor;
     -webkit-transition: .3s;
     transition: .3s;
     font-size: 25px;
-    background: #73AE20;
+    background: $pcolor;
 }
 
 .single-contact .contact-icon {
@@ -1000,7 +1000,7 @@ a.slide-btn:hover {
 }
 
 .form-control:focus {
-    border-color: #73AE20;
+    border-color: $pcolor;
     outline: 0;
     box-shadow: none;
 }
@@ -1010,8 +1010,8 @@ a.slide-btn:hover {
     color: #fff;
     padding: 12px 25px;
     font-size: 14px;
-    border: 1px solid #73AE20;
-    background-color: #73AE20;
+    border: 1px solid $pcolor;
+    background-color: $pcolor;
     border-radius: 0px;
     font-weight: 600;
     border-radius: 30px;
@@ -1020,7 +1020,7 @@ a.slide-btn:hover {
 .contact-form input[type='submit']:hover {
     background: transparent;
     color: #000;
-    border: 1px solid #73AE20;
+    border: 1px solid $pcolor;
     -webkit-transition: .3s;
     transition: .3s;
 }
@@ -1091,7 +1091,7 @@ a.slide-btn:hover {
 .footer-menu ul li {
     display: inline-block;
     margin: 0px 5px;
-    border-right: 1px solid #73AE20;
+    border-right: 1px solid $pcolor;
     padding-right: 10px;
     line-height: 14px;
 }
@@ -1106,7 +1106,7 @@ a.slide-btn:hover {
 }
 
 .footer-menu ul li a:hover {
-    color: #73AE20;
+    color: $pcolor;
 }
 
 
@@ -1194,32 +1194,32 @@ a.slide-btn:hover {
 .numbers#t1 {top: 12%;left: 11%}
 .numbers#t2 {top: 10%;left: 17.5%;}
 .numbers#t3 {top: 9%;left: 23%;}
-.numbers#t4 {top: 21%;left: 15%}
-.numbers#t5 {top: 29%;left: 16%;}
-.numbers#t6 {top: 37%;left: 17%;}
-.numbers#t7 {top: 45%;left: 18%;}
-.numbers#t8 {top: 55%;left: 11.5%;}
-.numbers#t9 {top: 55%;left: 19%;}
-.numbers#t10 {top: 55%;left: 25.5%;}
-.numbers#t11 {top: 55%;left: 31%;}
-.numbers#t12 {top: 55%;left: 38%;}
-.numbers#t13 {top: 55%;left: 45.5%;}
-.numbers#t14 {top: 55%;left: 51%;}
-.numbers#t15 {top: 55%;left: 56.5%;}
-.numbers#t16 {top: 55%;left: 62%;}
-.numbers#t17 {top: 55%;left: 67.5%;}
-.numbers#t18 {top: 55%;left: 80%;}
+.numbers#t4 {top: 20.5%;left: 15%}
+.numbers#t5 {top: 28.5%;left: 16%;}
+.numbers#t6 {top: 36.5%;left: 17%;}
+.numbers#t7 {top: 44.5%;left: 18%;}
+.numbers#t8 {top: 54%;left: 11%;}
+.numbers#t9 {top: 54%;left: 19%;}
+.numbers#t10 {top: 54%;left: 25%;}
+.numbers#t11 {top: 54%;left: 30.5%;}
+.numbers#t12 {top: 54%;left: 37.5%;}
+.numbers#t13 {top: 54%;left: 45%;}
+.numbers#t14 {top: 54%;left: 50.5%;}
+.numbers#t15 {top: 54%;left: 56%;}
+.numbers#t16 {top: 54%;left: 62%;}
+.numbers#t17 {top: 54%;left: 67.5%;}
+.numbers#t18 {top: 54%;left: 80%;}
 .numbers#t19 {top: 73%;left: 75%;}
 .numbers#t20 {top: 82%;left: 71.5%;}
 .numbers#t21 {top: 84%;left: 66%;}
-.numbers#t22 {top: 87%;left: 57%;}
-.numbers#t23 {top: 87%;left: 47.5%;}
-.numbers#t24 {top: 87%;left: 40.5%;}
-.numbers#t25 {top: 87%;left: 34.5%;}
-.numbers#t26 {top: 87%;left: 29%;}
-.numbers#t27 {top: 87%;left: 23%;}
-.numbers#t28 {top: 85%;left: 10%;}
-.numbers#t29 {top: 70%;left: 10%;}
+.numbers#t22 {top: 85%;left: 57%;}
+.numbers#t23 {top: 85%;left: 47.5%;}
+.numbers#t24 {top: 85%;left: 40.5%;}
+.numbers#t25 {top: 85%;left: 34.5%;}
+.numbers#t26 {top: 85%;left: 29%;}
+.numbers#t27 {top: 85%;left: 23%;}
+.numbers#t28 {top: 70%;left: 10%;}
+.numbers#t29 {top: 85%;left: 10%;}
 #info-div {
     position: absolute;
     top: 8%;
@@ -1268,4 +1268,16 @@ a.slide-btn:hover {
             }
         }
     }
+}
+#terrains-mobile {
+    display: none;
+    p:not(.title) {
+        background-color: transparent;
+        display: block;
+        padding: 0;
+        font-weight: 300;
+    }
+}
+.menu-phone {
+    line-height: 80px
 }

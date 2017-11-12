@@ -123,11 +123,15 @@ Version      : 1.0
          *  GOOGLE MAP JS
          * ----------------------------------------------------------------------------------------
          */
-        var myCenter = new google.maps.LatLng(45.717799, -74.319718);
+        var myCenter = new google.maps.LatLng(45.710693, -74.280736);
+        var arrivee = new google.maps.LatLng(45.717799, -74.319718);
+        var sortie = new google.maps.LatLng(45.675180, -74.183854);
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true, preserveViewport: true});
 
         function initialize() {
             var mapProp = {
-                zoom: 12,
+                zoom: 11,
                 center: myCenter,
                 scrollwheel: false,
                 styles: [{
@@ -144,10 +148,22 @@ Version      : 1.0
             };
             var map = new google.maps.Map(document.getElementById("map"), mapProp);
             var marker = new google.maps.Marker({
-                position: myCenter,
+                position: arrivee,
                 icon: "/assets/images/logo/map-pin-norplan.png"
             });
             marker.setMap(map);
+            directionsDisplay.setMap(map);
+            directionsService.route({
+              origin: sortie,
+              destination: arrivee,
+              travelMode: 'DRIVING'
+            }, function(response, status) {
+              if (status === 'OK') {
+                directionsDisplay.setDirections(response);
+              } else {
+              }
+            });
+            // map.setZoom(18);
         }
         google.maps.event.addDomListener(window, 'load', initialize);
 

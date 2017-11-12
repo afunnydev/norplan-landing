@@ -23,7 +23,7 @@
                         <div class="logo">
                             <a href="#nothing">
                                 <!-- <p>Le groupe Norplan</p> -->
-                                <img src="/assets/images/logo/groupenorplan-logo-text-blanc.png" alt="Groupe Norplan logo" style="width: auto;max-height: 80px;">
+                                <img src="/assets/images/logo/hameau-logo.png" alt="Groupe Norplan logo" style="width: auto;max-height: 80px;">
                             </a>
                         </div>
                         <!-- END LOGO DESIGN AREA -->
@@ -31,7 +31,7 @@
                     <div class="col-sm-9">
                         <div class="tour-info">
                             <ul>
-                                <li><i class="fa fa-phone" style="margin-right: 20px;"></i>514.865.0570</li>
+                                <li class="menu-phone"><a href="tel:+14504735042" style="color: white"><i class="fa fa-phone" style="margin-right: 20px;"></i>450.473.5042</a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,14 +58,14 @@
         </div>
     </header>
     <!-- / END HOMEPAGE DESIGN AREA -->
-    <section class="section-padding">
+    <section class="section-padding" id="plans">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="section-title">
                         <h2>Nos terrains</h2>
                         <div id="terrains">
-                            <img src="/assets/images/bg/plan-hameau-champetre.png" alt="terrains hameau champetre">
+                            <img src="/assets/images/bg/plan-hameau-champetre-2.png" alt="terrains hameau champetre">
                             {{ range .Params.terrains }}
                             <span id="t{{.number}}" class="numbers">{{.number}}</span>
                             {{ end }}
@@ -77,10 +77,36 @@
                                         {{ range .info}}
                                         <p>{{.}}</p>
                                         {{ end }}
+                                        <p>Superficie: {{.superficie}}</p>
                                     </div>
                                     {{ end }}
                                 </div>
                             </div>
+                        </div>
+                        <div id="terrains-mobile">
+                            <img src="/assets/images/bg/plan-norplan-1.png" alt="Plan">
+                            <p class="title">Chemin de Dunany - Terrains boisés</p>
+                            {{ range .Params.terrains}}
+                            {{ if eq .groupe 1}}
+                            <p>Terrain {{ .number }} - Superficie: {{.superficie}}</p>
+                            {{ end }}
+                            {{ end }}
+                            <p class="title">Chemin MacDougall - Terrains boisés</p>
+                            {{ range .Params.terrains}}
+                            {{ if eq .groupe 4}}
+                            <p>Terrain {{ .number }} - Superficie: {{.superficie}}</p>
+                            {{ else if eq .groupe 3}}
+                            <p>Terrain {{ .number }} - Superficie: {{.superficie}} - Avec petite étendue d'eau</p>
+                            {{ end }}
+                            {{ end }}
+                            <p class="title">Rue Champêtre - Terrains boisés</p>
+                            {{ range .Params.terrains}}
+                            {{ if eq .groupe 2}}
+                            <p>Terrain {{ .number }} - Superficie: {{.superficie}}</p>
+                            {{ else if eq .groupe 5}}
+                            <p>Terrain {{ .number }} - Superficie: {{.superficie}} - Avec petite étendue d'eau</p>
+                            {{ end }}
+                            {{ end }}
                         </div>
                     </div>
                 </div>
@@ -143,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row call-to-area-text">
+            <div id="faits" class="row call-to-area-text">
                 <!-- START SINGLE SERVICE DESIGN AREA -->
                 <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".2s">
                     <div class="single-service">
@@ -208,7 +234,7 @@
         </div>
     </section>
     <!-- / END CALL TO ACTION DESIGN AREA -->
-    <section class="section-padding">
+    <!-- <section class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -253,7 +279,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- START GOOGLE MAP DESIGN AREA -->
     <div id="map"></div>
     <!-- / END GOOGLE MAP DESIGN AREA -->
@@ -274,7 +300,7 @@
                         <div class="contact-icon">
                             <i class="icon-localisation"></i>
                         </div>
-                        <h5>Adresse des terrains ici</h2>
+                        <h5>À 35 minutes de Laval</h2>
                     </div>
                 </div>
                 <div class="col-sm-6 text-center">
@@ -282,7 +308,7 @@
                         <div class="contact-icon">
                             <i class="fa fa-phone"></i>
                         </div>
-                        <h5>514.865.0570</h2>
+                        <h5><a href="tel:+14504735042" style="color: black">450.473.5042</a></h2>
                     </div>
                 </div>
             </div>
@@ -290,19 +316,19 @@
                 <div class="col-md-12">
                     <!-- START CONTACT FORM DESIGN AREA -->
                     <div class="contact-form">
-                        <form id="contact-form" method="post" enctype="multipart/form-data">
+                        <form id="contact-form" method="post" action="/" netlify>
                             <div class="row">
                                 <div class="form-group col-md-4">
-                                    <input type="text" name="name" class="form-control" id="first-name" placeholder="Nom" required="required">
+                                    <input type="text" name="name" class="form-control" id="first-name" placeholder="Nom*" required="required">
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Courriel" required="required">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Courriel*" required="required">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <input type="text" name="subject" class="form-control" id="subject" placeholder="Sujet ou # de terrain">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <textarea rows="6" name="message" class="form-control" id="description" placeholder="Votre message" required="required"></textarea>
+                                    <textarea rows="6" name="message" class="form-control" id="description" placeholder="Votre message*" required="required"></textarea>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <div class="actions wow fadeInUp" data-wow-delay=".4s">
@@ -353,10 +379,10 @@
                     <div class="footer-text">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#place">Photos</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Directions</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a class="smoth-scroll" href="#plans">Plans</a></li>
+                                <li><a class="smoth-scroll" href="#faits">Faits saillants</a></li>
+                                <li><a class="smoth-scroll" href="#map">Directions</a></li>
+                                <li><a class="smoth-scroll" href="#contact">Contact</a></li>
                             </ul>
                         </div>
                         <h6>&copy;copyright | Groupe Norplan. Tous droits réservés.<br>Fait avec <i class="fa fa-heart"></i> par <a href="https://www.akiamarketing.ca/">Akia Marketing</a></h6>
@@ -379,12 +405,6 @@
         </div>
     </div>
     <!-- / END SCROOL UP DESIGN AREA -->
-
-    <!-- YOUTUBE JS -->
-    <!-- <script src="assets/js/jquery.mb.YTPlayer.min.js"></script> -->
-    <!-- <script type="text/javascript">
-        $('.player').mb_YTPlayer();
-    </script> -->
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG0fQo_1YGq32tayOYux5Y1T-paMXFgII"></script>
     <!-- scripts js -->

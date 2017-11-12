@@ -137,6 +137,12 @@ Version      : 1.0
     .menu-bg .tour-info {
         display: none;
     }
+    #terrains {
+        display: none !important;
+    }
+    #terrains-mobile {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -146,6 +152,9 @@ Version      : 1.0
         .info {
             min-width: 350px;
         }
+    }
+    .menu-phone {
+        line-height: 56px
     }
 }
 
