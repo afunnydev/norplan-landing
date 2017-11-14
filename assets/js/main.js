@@ -6,4 +6,5 @@
 //@prepros-prepend theme/gmap3.min.js
 //@prepros-prepend theme/form-contact.js
 //@prepros-prepend custom-animation.js
+//@prepros-prepend matchheight.min.js
 //@prepros-prepend theme/scripts.js

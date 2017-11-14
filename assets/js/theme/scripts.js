@@ -222,6 +222,8 @@ Version      : 1.0
          */
         new WOW().init();
 
+        $('.service-col').matchHeight();
+
     });
 
 })(jQuery);

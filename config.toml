@@ -1,3 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.hameauchampetre.com/"
 languageCode = "en-us"
-title = "Norplan "
+title = "Norplan"
+
+[taxonomies]
