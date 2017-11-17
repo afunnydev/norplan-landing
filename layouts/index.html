@@ -104,7 +104,8 @@
                             {{ if eq .groupe 4}}
                             <p>Terrain {{ .number }} - Superficie: {{.superficie}}</p>
                             {{ else if eq .groupe 3}}
-                            <p>Terrain {{ .number }} - Superficie: {{.superficie}} - Avec petite étendue d'eau</p>
+                            <p style="margin-bottom: 0">Terrain {{ .number }} - Superficie: {{.superficie}}</p>
+                            <p>Avec petite étendue d'eau</p>
                             {{ end }}
                             {{ end }}
                             <p class="title">Rue Champêtre - Terrains boisés</p>
@@ -112,7 +113,8 @@
                             {{ if eq .groupe 2}}
                             <p>Terrain {{ .number }} - Superficie: {{.superficie}}</p>
                             {{ else if eq .groupe 5}}
-                            <p>Terrain {{ .number }} - Superficie: {{.superficie}} - Avec petite étendue d'eau</p>
+                            <p style="margin-bottom:0">Terrain {{ .number }} - Superficie: {{.superficie}}</p>
+                            <p>Avec petite étendue d'eau</p>
                             {{ end }}
                             {{ end }}
                             <p class="title">Parc</p>
