@@ -761,7 +761,7 @@ a.slide-btn:hover {
     color: $pcolor;
     height: 100px;
     width: 100px;
-    background: #fff;
+    background: transparent;
     line-height: 100px;
     border-radius: 50%;
     border: 1px solid $pcolor;
@@ -788,25 +788,47 @@ a.slide-btn:hover {
 * 06.CALL TO ACTION CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
-
 .call-to-area {
     background: $pcolor;
     padding: 80px 0px;
     position: relative;
     z-index: 1;
-    color: #fff;
+    color: white;
 }
 
-// .call-to-area:after {
-//     position: absolute;
-//     background: rgba(0, 0, 0, .6);
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     height: 100%;
-//     content: "";
-//     z-index: -1;
-// }
+.image-bg-2.call-to-area {
+    background: url('/assets/images/bg/FamilleForet.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.image-bg.call-to-area {
+    background: url('/assets/images/bg/CouplePlan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-bg.call-to-area:after, {
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+.image-bg-2.call-to-area:after, {
+    position: absolute;
+    background: rgba(0, 0, 0, .7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
 
 .call-to-area-text h2 {
     color: #fff;
@@ -836,6 +858,13 @@ a.slide-btn:hover {
     -webkit-transition: .3s;
     transition: .3s;
     background: transparent;
+}
+.call-to-area .slide-btn.cta-btn {
+    border-color: $pcolor !important;
+    &:hover {
+        background: transparent;
+        color: white;
+    }
 }
 
 
@@ -1191,9 +1220,9 @@ a.slide-btn:hover {
     line-height: 30px;
     cursor: pointer;
 }
-.numbers#t1 {top: 12%;left: 11%}
+.numbers#t1 {top: 9%;left: 23%;}
 .numbers#t2 {top: 10%;left: 17.5%;}
-.numbers#t3 {top: 9%;left: 23%;}
+.numbers#t3 {top: 12%;left: 11%}
 .numbers#t4 {top: 20.5%;left: 15%}
 .numbers#t5 {top: 28.5%;left: 16%;}
 .numbers#t6 {top: 36.5%;left: 17%;}
@@ -1220,6 +1249,8 @@ a.slide-btn:hover {
 .numbers#t27 {top: 85%;left: 23%;}
 .numbers#t28 {top: 70%;left: 10%;}
 .numbers#t29 {top: 85%;left: 10%;}
+#labelparc {color: white; position: absolute; font-size: 18px; text-transform: uppercase; top:80%; left: 89%}
+#superficieparc {color: white; position: absolute; font-size: 13px; text-transform: uppercase; top:85%; left: 85%; padding-right: 20px}
 #info-div {
     position: absolute;
     top: 8%;

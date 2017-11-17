@@ -21,6 +21,12 @@ a.slide-btn:hover, .call-to-area-text a, .contact-form input[type="submit"]:hove
 	color: $pcolor;
 	border: 1px solid $pcolor;
 }
+.call-to-area {
+	.service-icon i, .contact-icon i  {
+		color: #fff;
+		border: 1px solid #fff
+	}
+}
 
 .footer-menu ul li {
 	border-right: 1px solid $pcolor;

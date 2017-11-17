@@ -88,6 +88,7 @@ Version      : 1.0
         $(".tour-list").owlCarousel({
             items: 1,
             dots: true,
+            autoWidth: true,
             responsive: {
                 500: {
                     items: 2

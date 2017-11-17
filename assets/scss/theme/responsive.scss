@@ -48,6 +48,10 @@ Version      : 1.0
         letter-spacing: 1px;
         border-radius: 30px;
     }
+    #superficieparc {
+        display: none;
+    }
+    #labelparc {top:82%;left:88%}
 }
 
 
@@ -142,6 +146,14 @@ Version      : 1.0
     }
     #terrains-mobile {
         display: block;
+    }
+    .image-bg-2.call-to-area {
+        background: $pcolor;
+        background-size: cover;
+        background-position: center;
+        &:after {
+            width: 0;
+        }
     }
 }
 
