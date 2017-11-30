@@ -4,10 +4,12 @@
 {{- partial "site-head.html" -}}
 
 <body>
+    {{ if getenv "IS_PROD" }}
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5S3FVB"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    {{ end }}
     <!-- START PRELOADER AREA-->
     <div class="preloader-area">
         <div class="spinner">
