@@ -150,7 +150,7 @@ Version      : 1.0
             var map = new google.maps.Map(document.getElementById("map"), mapProp);
             var marker = new google.maps.Marker({
                 position: arrivee,
-                icon: "/assets/images/logo/map-pin-norplan.png"
+                icon: "/assets/images/logo/marker-hameau-2.png"
             });
             marker.setMap(map);
             directionsDisplay.setMap(map);

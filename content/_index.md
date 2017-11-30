@@ -9,17 +9,18 @@ slider:
   btn2: "Comment s'y rendre?"
   link2: "#map"
 section2:
-  titre: "Nous avons le terrain que vous voulez"
+  titre: "Nous avons le terrain que vous cherchez"
   images:
     - "/assets/images/place/hameau-image1.jpg"
-    - "/assets/images/place/hameau-image11.jpg"
     - "/assets/images/place/hameau-image12.jpg"
-    - "/assets/images/place/hameau-image13.jpg"
     - "/assets/images/place/hameau-image5.jpg"
     - "/assets/images/place/hameau-image14.jpg"
     - "/assets/images/place/hameau-image7.jpg"
+    - "/assets/images/place/hameau-image15.jpg"
     - "/assets/images/place/hameau-image3.jpg"
+    - "/assets/images/place/hameau-image16.jpg"
     - "/assets/images/place/hameau-image4.jpg"
+    - "/assets/images/place/hameau-image17.jpg"
 terrains:
   - number: 1
     info:

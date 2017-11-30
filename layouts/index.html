@@ -4,6 +4,10 @@
 {{- partial "site-head.html" -}}
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5S3FVB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- START PRELOADER AREA-->
     <div class="preloader-area">
         <div class="spinner">
@@ -64,7 +68,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div style="margin-bottom: 30px;">
-                        <p>Le Hameau champêtre, c'est un projet bâti avec une conscience de l'environnement qui l'entoure. Avec un parc dans lequel on retrouve un petit lac, le projet saura vous charmer dès votre arrivée! Dans un emplacement calme, mais facilement accessible, il s'agit de l'endroit idéal pour toute personne rêvant d'avoir son propre petit havre de paix. Pour une autoconstruction ou bien pour une construction neuve faite par un contracteur, les terrains sont facilement accessibles grâce à la mise en place d'une nouvelle route. Venez voir notre projet et laissez-vous charmer par l'ambiance paisible du Hameau Champêtre.</p>
+                        <p>Le Hameau champêtre, c'est un projet bâti avec une conscience de l'environnement qui l'entoure. On y retrouve un parc, un petit lac, et de la forêt à perte de vue! Le projet saura vous charmer dès votre arrivée! Situé dans un emplacement paisible, mais facilement accessible,  il s'agit de l'endroit idéal pour toute personne rêvant d'avoir son propre petit havre de paix. Que ce soit pour une autoconstruction ou pour une construction effectuée par un contracteur, nos terrains prêts à bâtir sauront vous convenir à coup sûr. Venez voir notre projet et laissez-vous charmer par l'ambiance paisible du Hameau Champêtre. <a href="#contact">Vous êtes intéressés par le projet ?</a> Nous offrons le service de visite et des séances d'informations privées.</p>
                     </div>
                 </div>
                 <div class="col-sm-12">
@@ -155,7 +159,7 @@
             <div class="tour-list owl-carousel owl-theme">
                 <!-- START SINGLE TOUR PLACE DESIGN AREA -->
                 {{ range $i, $e := .Params.section2.images}}
-                <div class="single-place" style='width: {{ if eq $i 5 }}581px{{ else }}300px{{end}}'>
+                <div class="single-place" style='width: {{ if eq $i 3 }}581px{{ else if eq $i 5 }}566px{{ else if eq $i 7 }}566px{{ else if eq $i 9 }}497px{{ else }}300px{{end}}'>
                     <img src="{{$e}}" alt="">
                     <div class="tour-des">
                         <h2>Hameau Champêtre</h2>
@@ -198,7 +202,7 @@
                         <div class="service-icon"><i class="icon-localisation" aria-hidden="true"></i>
                         </div>
                         <h4>Localisation</h4>
-                        <p>C'est le meilleur des deux mondes; des terrains en nature avec tous les services à proximité. À seulement 10 minutes de Lachute et 35 minutes de Laval!</p>
+                        <p>C'est le meilleur des deux mondes; des terrains en nature avec tous les services à proximité. À seulement 10 minutes du centre-ville de Lachute et 35 minutes de Laval!</p>
                     </div>
                 </div>
                 <!-- / END SINGLE SERVICE DESIGN AREA -->
@@ -218,7 +222,7 @@
                         <div class="service-icon"><i class="icon-vie-quartier" aria-hidden="true"></i>
                         </div>
                         <h4>Vie de quartier</h4>
-                        <p>Avec 29 terrains disponibles dans le projet, c'est l'idéal pour une vie de quartier paisible.</p>
+                        <p>Avec seulement 29 terrains disponibles dans le projet, c'est l'idéal pour une vie de quartier paisible.</p>
                     </div>
                 </div>
                 <!-- / END SINGLE SERVICE DESIGN AREA -->
@@ -228,7 +232,7 @@
                         <div class="service-icon"><i class="fa fa-tint" aria-hidden="true"></i>
                         </div>
                         <h4>Parc avec étang</h4>
-                        <p>Un espace créé pour les résidants dans le but de leur permettre de relaxer et de profiter de la brise fraîche du Hameau Champêtre.</p>
+                        <p>Un espace créé pour les résidents dans le but de leur permettre de relaxer et de profiter de la brise fraîche du Hameau Champêtre.</p>
                     </div>
                 </div>
                 <!-- / END SINGLE SERVICE DESIGN AREA -->
@@ -373,7 +377,7 @@
                     <img src="{{.lien}}" alt="">
                     <div class="tour-des">
                         <h2>{{ .projet }}</h2>
-                        <h3>Rive-Nord</h3>
+                        <h3>Contactez-nous pour avoir de l'information sur nos autres projets</h3>
                     </div>
                 </div>
                 {{ end }}
