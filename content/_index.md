@@ -199,10 +199,8 @@ terrains:
 dsection:
   titre: Nos autres projets
   images:
-    - lien: "/assets/images/place/lachute-1.jpg"
-      projet: "Lachute et son boisé"
     - lien: "/assets/images/place/lachute-2.jpg"
-      projet: "Lachute et son boisé"
+      projet: "Terrains divers"
     - lien: "/assets/images/place/autres-projets.jpg"
       projet: Terrains divers
 ---
