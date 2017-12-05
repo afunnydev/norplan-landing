@@ -7,14 +7,14 @@ $(document).ready(function() {
 	$('.requiredField').each(function() {
 	if(jQuery.trim($(this).val()) == '') {
     var labelText = $(this).prev('label').text();
-    $(this).parent().append('<span class="error">You forgot to enter your '+labelText+'</span>');
+    $(this).parent().append('<span class="error">Vous avez oublié votre '+labelText+'</span>');
     $(this).addClass('inputError');
     hasError = true;
     } else if($(this).hasClass('email')) {
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
     if(!emailReg.test(jQuery.trim($(this).val()))) {
     var labelText = $(this).prev('label').text();
-    $(this).parent().append('<span class="error">You entered an invalid '+labelText+'</span>');
+    $(this).parent().append('<span class="error">Le champ '+labelText+' est erroné</span>');
     $(this).addClass('inputError');
     hasError = true;
     }
@@ -27,7 +27,7 @@ $(document).ready(function() {
 
      $("#loader").show();
         $.ajax({
-            url: "assets/php/contact.php",
+            url: "/",
             type: "POST",
             data:  new FormData(this),
             contentType: false,
@@ -35,7 +35,7 @@ $(document).ready(function() {
             processData:false,
             success: function(data){
 			  $('form#contact-form').slideUp("fast", function() {
-			  $(this).before('<div class="success">Thank you. Your Email was sent successfully.</div>');
+			  $(this).before('<div class="success">Merci de votre intérêt. Votre courriel a été envoyé avec succès.</div>');
 			  $("#loader").hide();
 			  })
             }           
