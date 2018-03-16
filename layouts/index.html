@@ -158,6 +158,9 @@
                     </div>
                 </div>
             </div>
+            <div class="row" style="margin: 0; padding: 0 10px;">
+                <script src="https://fast.wistia.com/embed/medias/nnieaolljx.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_nnieaolljx videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+            </div>
             <div class="tour-list owl-carousel owl-theme">
                 <!-- START SINGLE TOUR PLACE DESIGN AREA -->
                 {{ range $i, $e := .Params.section2.images}}
@@ -375,13 +378,15 @@
             <div class="project-list owl-carousel owl-theme" id="project-list">
                 <!-- START SINGLE TOUR PLACE DESIGN AREA -->
                 {{ range .Params.dsection.images}}
-                <div class="single-place">
-                    <img src="{{.lien}}" alt="">
-                    <div class="tour-des">
-                        <h2>{{ .projet }}</h2>
-                        <h3>Contactez-nous pour avoir de l'information sur nos autres projets</h3>
+                <a {{if .link }} href="{{ .link }}" target="_blank"{{else}} href="tel:+14504735042" {{end}} style="color: black">
+                    <div class="single-place">
+                        <img src="{{.lien}}" alt="">
+                        <div class="tour-des">
+                            <h2>{{ .projet }}</h2>
+                            <h3>Contactez-nous pour avoir de l'information sur nos autres projets</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
                 {{ end }}
                 <!-- / END SINGLE TOUR PLACE DESIGN AREA -->
             </div>
