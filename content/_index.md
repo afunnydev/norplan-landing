@@ -199,9 +199,14 @@ terrains:
 dsection:
   titre: Nos autres projets
   images:
-    - lien: "/assets/images/place/lachute-1.jpg"
-      projet: "Lachute et son boisé"
-      link: "https://www.facebook.com/Lachute-et-son-bois%C3%A9-1135245673194052/"
+    ## - lien: "/assets/images/place/lachute-1.jpg"
+    ##   projet: "Lachute et son boisé"
+    ##   link: "https://www.facebook.com/Lachute-et-son-bois%C3%A9-1135245673194052/"
+    ##   description: Contactez-nous pour avoir de l'information sur nos autres projets
+    - lien: "/assets/images/place/fermette-hameau.jpg"
+      projet: "Fermette à 25 minutes de Laval"
+      description: Organisez votre prochain événement dans un endroit rustique et festif
     - lien: "/assets/images/place/autres-projets.jpg"
       projet: Terrains divers
+      description: Contactez-nous pour avoir de l'information sur nos autres projets
 ---
