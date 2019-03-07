@@ -205,7 +205,7 @@ dsection:
     ##   description: Contactez-nous pour avoir de l'information sur nos autres projets
     - lien: "/assets/images/place/fermette-hameau.jpg"
       projet: "Fermette à 25 minutes de Laval"
-      description: Organisez votre prochain événement dans un endroit rustique et festif
+      description: Contactez-nous pour avoir plus d'informations sur nos différents terrains
     - lien: "/assets/images/place/autres-projets.jpg"
       projet: Terrains divers
       description: Contactez-nous pour avoir de l'information sur nos autres projets
