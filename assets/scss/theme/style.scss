@@ -2,7 +2,7 @@
 * ----------------------------------------------------------------------------------------
 Author       : onepageboss
 Template Name: Tourlover - Travel agency landing page Template
-Version      : 1.0                                          
+Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 
@@ -1219,6 +1219,12 @@ a.slide-btn:hover {
     position: absolute;
     line-height: 30px;
     cursor: pointer;
+    span.state {
+        color: red;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: absolute;
+    }
 }
 .numbers#t1 {top: 9%;left: 23%;}
 .numbers#t2 {top: 10%;left: 17.5%;}
@@ -1226,7 +1232,13 @@ a.slide-btn:hover {
 .numbers#t4 {top: 20.5%;left: 15%}
 .numbers#t5 {top: 28.5%;left: 16%;}
 .numbers#t6 {top: 36.5%;left: 17%;}
-.numbers#t7 {top: 44.5%;left: 18%;}
+.numbers#t7 {
+    top: 44.5%;
+    left: 18%;
+    span.state {
+        left: 40px;
+    }
+}
 .numbers#t8 {top: 54%;left: 11%;}
 .numbers#t9 {top: 54%;left: 19%;}
 .numbers#t10 {top: 54%;left: 25%;}
@@ -1240,7 +1252,14 @@ a.slide-btn:hover {
 .numbers#t18 {top: 54%;left: 80%;}
 .numbers#t19 {top: 73%;left: 75%;}
 .numbers#t20 {top: 82%;left: 71.5%;}
-.numbers#t21 {top: 84%;left: 66%;}
+.numbers#t21 {
+    top: 84%;
+    left: 66%;
+    span.state {
+        bottom: 25px;
+        right: 0;
+    }
+}
 .numbers#t22 {top: 85%;left: 57%;}
 .numbers#t23 {top: 85%;left: 47.5%;}
 .numbers#t24 {top: 85%;left: 40.5%;}

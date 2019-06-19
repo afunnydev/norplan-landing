@@ -79,7 +79,7 @@
                         <div id="terrains">
                             <img src="/assets/images/bg/plan-hameau-champetre-2.png" alt="terrains hameau champetre">
                             {{ range .Params.terrains }}
-                            <span id="t{{.number}}" class="numbers">{{.number}}</span>
+                            <span id="t{{.number}}" class="numbers">{{.number}}{{ if .sold }}<span class="state">Vendu!</span>{{ end }}</span>
                             {{ end }}
                             <span id="labelparc">Parc</span>
                             <span id="superficieparc">20 556 mètres carrés</span>
@@ -108,7 +108,7 @@
                             <p class="title">Chemin MacDougall - Terrains boisés</p>
                             {{ range .Params.terrains}}
                             {{ if eq .groupe 4}}
-                            <p>Terrain {{ .number }} - Superficie: {{.superficie}}</p>
+                            <p>Terrain {{ .number }} - Superficie: {{.superficie}} {{ if .sold }}<span class="state">Vendu!</span>{{ end }}</p>
                             {{ else if eq .groupe 3}}
                             <p style="margin-bottom: 0">Terrain {{ .number }} - Superficie: {{.superficie}}</p>
                             <p>Avec petite étendue d'eau</p>
@@ -117,7 +117,7 @@
                             <p class="title">Rue Champêtre - Terrains boisés</p>
                             {{ range .Params.terrains}}
                             {{ if eq .groupe 2}}
-                            <p>Terrain {{ .number }} - Superficie: {{.superficie}}</p>
+                            <p>Terrain {{ .number }} - Superficie: {{.superficie}} {{ if .sold }}<span class="state">Vendu!</span>{{ end }}</p>
                             {{ else if eq .groupe 5}}
                             <p style="margin-bottom:0">Terrain {{ .number }} - Superficie: {{.superficie}}</p>
                             <p>Avec petite étendue d'eau</p>

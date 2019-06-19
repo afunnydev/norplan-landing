@@ -2,7 +2,7 @@
 * ----------------------------------------------------------------------------------------
 Author       : onepageboss
 Template Name: Tourlover - Travel agency landing page Template
-Version      : 1.0                                          
+Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 
@@ -47,6 +47,21 @@ Version      : 1.0
         padding: 6px 14px;
         letter-spacing: 1px;
         border-radius: 30px;
+    }
+    #terrains span.numbers {
+        span.state {
+            font-size: 1rem;
+        }
+    }
+    .numbers#t7 {
+        span.state {
+            left: 35px;
+        }
+    }
+    .numbers#t21 {
+        span.state {
+            right: 9px;
+        }
     }
     #superficieparc {
         display: none;
@@ -146,6 +161,13 @@ Version      : 1.0
     }
     #terrains-mobile {
         display: block;
+        span.state {
+            color: red;
+            display: block;
+            font-size: 1.2rem;
+            font-weight: bold;
+            line-height: 1;
+        }
     }
     .image-bg-2.call-to-area {
         background: $pcolor;
@@ -179,6 +201,6 @@ Version      : 1.0
 * ----------------------------------------------------------------------------------------
 Author       : onepageboss
 Template Name: Tourlover - Travel agency landing page Template
-Version      : 1.0                                          
+Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
