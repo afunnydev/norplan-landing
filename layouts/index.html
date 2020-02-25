@@ -79,7 +79,7 @@
                         <div id="terrains">
                             <img src="/assets/images/bg/plan-hameau-champetre-2.png" alt="terrains hameau champetre">
                             {{ range .Params.terrains }}
-                            <span id="t{{.number}}" class="numbers">{{.number}}{{ if .sold }}<span class="state">Vendu!</span>{{ end }}</span>
+                            <span id="t{{.number}}" class="numbers{{ if .sold }} sold{{ end }}">{{.number}}{{ if .sold }}<span class="state">Vendu!</span>{{ end }}</span>
                             {{ end }}
                             <span id="labelparc">Parc</span>
                             <span id="superficieparc">20 556 mètres carrés</span>
@@ -102,7 +102,7 @@
                             <p class="title">Chemin de Dunany - Terrains boisés</p>
                             {{ range .Params.terrains}}
                             {{ if eq .groupe 1}}
-                            <p>Terrain {{ .number }} - Superficie: {{.superficie}}</p>
+                            <p>Terrain {{ .number }} - Superficie: {{.superficie}} {{ if .sold }}<span class="state">Vendu!</span>{{ end }}</p>
                             {{ end }}
                             {{ end }}
                             <p class="title">Chemin MacDougall - Terrains boisés</p>

@@ -40,6 +40,7 @@ terrains:
       - "Boisé"
     superficie: "4044,9m carrés"
     groupe: 1
+    sold: true
   - number: 4
     info:
       - "Chemin MacDougall"
@@ -58,6 +59,7 @@ terrains:
       - "Boisé"
     superficie: "7619,2m carrés"
     groupe: 4
+    sold: true
   - number: 7
     info:
       - "Chemin MacDougall"
@@ -83,6 +85,7 @@ terrains:
       - "Boisé"
     superficie: "4026,7m carrés"
     groupe: 2
+    sold: true
   - number: 11
     info:
       - "Rue Champêtre"
@@ -168,6 +171,7 @@ terrains:
       - "Boisé"
     superficie: "5421,2m carrés"
     groupe: 2
+    sold: true
   - number: 25
     info:
       - "Rue Champêtre"

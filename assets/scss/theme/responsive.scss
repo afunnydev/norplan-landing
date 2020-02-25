@@ -53,15 +53,60 @@ Version      : 1.0
             font-size: 1rem;
         }
     }
+    .numbers#t3 {
+        span.state {
+            bottom: 20px;
+            right: 0;
+            top: unset;
+        }
+    }
+    .numbers#t6 {
+        span.state {
+            bottom: 3px;
+        }
+    }
     .numbers#t7 {
         span.state {
             left: 35px;
+        }
+    }
+    .numbers#t10 {
+        span.state {
+            right: 0;
         }
     }
     .numbers#t21 {
         span.state {
             right: 9px;
         }
+    }
+    .numbers#t22 {
+        top: 83%;
+    }
+    .numbers#t23 {
+        top: 83%;
+    }
+    .numbers#t24 {
+        top: 83%;
+        left: 39.5%;
+        span.state {
+            right: -3px;
+        }
+    }
+    .numbers#t25 {
+        top: 83%;
+        left: 33.5%;
+    }
+    .numbers#t26 {
+        top: 83%;
+        left: 28%;
+    }
+    .numbers#t27 {
+        top: 83%;
+        left: 22%;
+    }
+    .numbers#t29 {
+        top: 83%;
     }
     #superficieparc {
         display: none;
@@ -73,7 +118,7 @@ Version      : 1.0
 /* Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
-    .menu-bg .navbar-collapse {}
+    //.menu-bg .navbar-collapse {}
     .welcome-image-area,
     .welcome-video-area {
         padding-top: 120px;
